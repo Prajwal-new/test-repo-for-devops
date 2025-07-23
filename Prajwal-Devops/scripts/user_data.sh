@@ -24,3 +24,9 @@ mvn clean package
 
 # Run the app on port 80 in background
 nohup java -jar target/hellomvc-0.0.1-SNAPSHOT.jar --server.port=80 > app.log 2>&1 &
+
+# Wait for 5 minutes (300 seconds)
+sleep 300
+
+# Stop the instance
+shutdown -h now
